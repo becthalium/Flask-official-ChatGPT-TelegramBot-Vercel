@@ -11,7 +11,9 @@ from telegram.ext import Dispatcher, MessageHandler, Filters
 #################
 import openai
 	
-openai.api_key = os.getenv("OPENAI_API_KEY") 
+openai.api_key = "pk-jiroehmlINFYkpJTOvPLSGeiDhgsDaiLcPXbFpRjUcgAulcM"
+
+openai.api_base = 'https://api.pawan.krd/v1' 
 
 chat_language = os.getenv("INIT_LANGUAGE", default = "zh") #amend here to change your preset language
 	
@@ -55,7 +57,7 @@ class ChatGPT:
 
 #####################
 
-telegram_bot_token = str(os.getenv("TELEGRAM_BOT_TOKEN"))
+telegram_bot_token = str(os.getenv("6244126708:AAF-8_qFjbs2tuyTwZQ9iVpAduLnBX6t_iE")) 
 
 
 
