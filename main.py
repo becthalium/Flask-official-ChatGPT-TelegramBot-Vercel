@@ -15,7 +15,7 @@ openai.api_key = "pk-jiroehmlINFYkpJTOvPLSGeiDhgsDaiLcPXbFpRjUcgAulcM"
 
 openai.api_base = 'https://api.pawan.krd/v1'
 
-chat_language = os.getenv("INIT_LANGUAGE", default = "zh") #amend here to change your preset language
+chat_language = 'zh' #amend here to change your preset language
 	
 conversation = []
 
@@ -25,7 +25,7 @@ class ChatGPT:
     def __init__(self):
         
         self.messages = conversation
-        self.model = os.getenv("OPENAI_MODEL", default = "gpt-3.5-turbo")
+        self.model = "gpt-3.5-turbo"
 
 
 
